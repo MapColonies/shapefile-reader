@@ -208,7 +208,7 @@ import { ShapefileChunkReader } from '@map-colonies/shapefile-reader';
 import { jsLogger } from '@map-colonies/js-logger';
 
 const reader = new ShapefileChunkReader({
-  maxVerticesPerChunk: 100_000,
+  maxVerticesPerChunk: 100000,
   generateFeatureId: true,
   logger: jsLogger({ level: 'info' }),
 
@@ -262,7 +262,3 @@ npm run lint
 # Format
 npm run format:fix
 ```
-
-## License
-
-ISC

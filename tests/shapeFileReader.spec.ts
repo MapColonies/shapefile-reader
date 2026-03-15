@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import type { Mocked, MockedFunction, MockedClass } from 'vitest';
-import { jsLogger } from '@map-colonies/js-logger';
 import type { Feature } from 'geojson';
 import * as gdalShapefileReader from '../src/core/gdalShapefileReader';
 import { ShapefileChunkReader } from '../src';
@@ -60,7 +59,7 @@ describe('ShapefileChunkReader', () => {
     // Setup mock options
     mockOptions = {
       maxVerticesPerChunk: 1000,
-      logger: jsLogger({ enabled: false }),
+      logger: undefined,
       stateManager: {
         loadState: vi.fn(),
         saveState: vi.fn(),
