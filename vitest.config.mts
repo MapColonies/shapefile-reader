@@ -8,6 +8,11 @@ if (process.env.GITHUB_ACTIONS) {
 
 export default defineConfig({
   test: {
+    server: {
+      deps: {
+        inline: ['@map-colonies/js-logger'],
+      },
+    },
     typecheck: {
       enabled: true,
       tsconfig: 'tsconfig.json',
