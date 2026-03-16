@@ -17,6 +17,8 @@ jobs:
         uses: MapColonies/shared-workflows/actions/init-npm@init-npm-v1
         with:
           node-version: 24.x
-      - uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+
+      - run: npm install -g npm
+
+      - name: Publish to npm
+        run: npm publish --access public
