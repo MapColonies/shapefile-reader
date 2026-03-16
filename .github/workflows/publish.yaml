@@ -12,7 +12,7 @@ jobs:
       contents: read
       packages: write # allow GITHUB_TOKEN to publish packages
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Init Nodejs
         uses: MapColonies/shared-workflows/actions/init-npm@init-npm-v1
         with:
