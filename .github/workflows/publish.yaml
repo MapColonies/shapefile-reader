@@ -13,8 +13,10 @@ jobs:
       packages: write # allow GITHUB_TOKEN to publish packages
     steps:
       - uses: actions/checkout@v4
-      - name: Init nodejs
-        uses: ./.github/actions/init-npm
+      - name: Init Nodejs
+        uses: MapColonies/shared-workflows/actions/init-npm@init-npm-v1
+        with:
+          node-version: 24.x
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
