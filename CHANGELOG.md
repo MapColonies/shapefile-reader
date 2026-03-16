@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.1](https://github.com/MapColonies/shapefile-reader/compare/v1.0.0...v1.0.1) (2026-03-16)
+
+
+### Bug Fixes
+
+* update node.js initialization step in publish workflow ([4f5282f](https://github.com/MapColonies/shapefile-reader/commit/4f5282fe6ffb5ec0e292dcc5a9fc4b3a0a8a99e3))
+* update npm publish step in workflow to use local npm installation ([74bcd0d](https://github.com/MapColonies/shapefile-reader/commit/74bcd0d782dcb548c0eb776974150cbc11d9d73b))
+
 ## 1.0.0 (2026-03-16)
 
 
