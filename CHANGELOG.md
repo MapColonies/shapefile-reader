@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/MapColonies/shapefile-reader/compare/v1.0.1...v1.1.0) (2026-03-16)
+
+
+### Features
+
+* add logger interface from @map-colonies/types and remove local logger definition ([49f0e91](https://github.com/MapColonies/shapefile-reader/commit/49f0e9179728d662276af6f66134de5ffedd939b))
+
 ## [1.0.1](https://github.com/MapColonies/shapefile-reader/compare/v1.0.0...v1.0.1) (2026-03-16)
 
 
