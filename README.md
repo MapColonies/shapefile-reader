@@ -78,7 +78,7 @@ Throws if the file has no valid features or vertices.
 |--------|------|----------|-------------|
 | `maxVerticesPerChunk` | `number` | Yes | Maximum total vertices allowed per chunk. Controls peak memory usage. |
 | `generateFeatureId` | `boolean` | No | When `true`, assigns a random UUID to each feature that has no `id`. Default: `false`. |
-| `logger` | `Logger` | No | A `@map-colonies/js-logger` instance for debug/info/warn/error output. |
+| `logger` | `Logger` | No | Any logger with `info`, `debug`, `warn`, `error` methods accepting an object (e.g. `pino`, `@map-colonies/js-logger`). |
 | `stateManager` | `StateManager` | No | Enables resumable processing. See [StateManager](#statemanager). |
 | `metricsCollector` | `MetricsCollector` | No | Receives per-chunk and per-file metrics callbacks. See [MetricsCollector](#metricscollector). |
 
@@ -205,12 +205,12 @@ const count = countVertices(feature.geometry);
 
 ```typescript
 import { ShapefileChunkReader } from '@map-colonies/shapefile-reader';
-import { jsLogger } from '@map-colonies/js-logger';
+import pino from 'pino';
 
 const reader = new ShapefileChunkReader({
   maxVerticesPerChunk: 100000,
   generateFeatureId: true,
-  logger: jsLogger({ level: 'info' }),
+  logger: pino({ level: 'info' }),
 
   stateManager: {
     saveState: async (state) => {

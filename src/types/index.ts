@@ -1,8 +1,9 @@
 import type { Feature } from 'geojson';
-import type { Logger } from '@map-colonies/js-logger';
 import type { StateManager } from '../types';
 import type { MetricsCollector } from './metrics';
+import type { Logger } from './logger';
 
+export * from './logger';
 export * from './metrics';
 export * from './state';
 
