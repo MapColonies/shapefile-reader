@@ -70,6 +70,7 @@
     "vitest": "^4.0.18"
   },
   "dependencies": {
+    "@map-colonies/types": "^1.9.0",
     "@types/geojson": "^7946.0.16",
     "gdal-async": "^3.12.2",
     "zod": "^4.3.6"
