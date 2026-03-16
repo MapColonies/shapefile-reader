@@ -61,7 +61,7 @@
     "commitlint": "^20.4.1",
     "eslint": "^9.39.2",
     "husky": "^9.1.7",
-    "prettier": "^3.5.3",
+    "prettier": "^3.8.1",
     "pretty-quick": "^4.2.2",
     "publint": "^0.3.17",
     "rimraf": "^6.1.3",
